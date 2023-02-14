@@ -5176,4 +5176,7 @@
 
   <!-- Whether we order unlocking and waking -->
   <java-symbol type="bool" name="config_orderUnlockAndWake" />
+
+    <!-- Whether to use Richtap vibration -->
+    <java-symbol type="bool" name="config_usesRichtapVibration" />
 </resources>
