@@ -16,6 +16,7 @@
 
 package com.android.systemui.brightness.shared.model
 
+import androidx.annotation.IntRange
 import com.android.settingslib.display.BrightnessUtils
 import com.android.systemui.log.table.TableLogBuffer
 import com.android.systemui.util.kotlin.pairwiseBy
@@ -23,6 +24,10 @@ import kotlinx.coroutines.flow.Flow
 
 @JvmInline
 value class GammaBrightness(
+    @IntRange(
+        from = BrightnessUtils.GAMMA_SPACE_MIN.toLong(),
+        to = BrightnessUtils.GAMMA_SPACE_MAX.toLong()
+    )
     val value: Int
 )
 
